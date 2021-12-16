@@ -1,2 +1,6 @@
 @use 'abstracts' as *;
 @use 'components' as *;
+
+:root {
+   background-color: $c-white;
+}
