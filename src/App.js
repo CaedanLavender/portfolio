@@ -5,13 +5,14 @@ import Body from './components/Body';
 import './scss/main.scss';
 
 function App() {
-   const [atTop, setAtTop] = useState(true);
+   const [atTop, setAtTop] = useState(false);
 
    const handleScroll = () => {
       const navPosition = document.getElementById('header').getBoundingClientRect().top;
+      const landingPosition = document.getElementById('landing').getBoundingClientRect().bottom;
 
-      // Sets atTop state to true when navPosition is falsey (zero).
-      setAtTop(!navPosition)
+      // Sets atTop state to true when navPosition is less than zero.
+      setAtTop(landingPosition <= 0)
    }
 
    useEffect(() => {
@@ -23,7 +24,8 @@ function App() {
 
    return (
       <div className="App">
-         <div id='landing'></div>
+         {/* <div id='landing'></div> */}
+         <Landing />
          <Header atTop={atTop} />
          <Body />
       </div>

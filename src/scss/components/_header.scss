@@ -4,15 +4,27 @@
    // background-color: red;
    height: 100vh;
    width: 100%;
-   h1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+#landingInner {
+   max-width: $s-content-width;
+   width: 100%;
+   padding: 1em;
+   h1 {
+      // font-size: 144px;
    }
    h3 {
-
+      // font-size: 72px;
+      font-style: italic;
    }
-   span {
-
+   article {
+      // font-size: 24px;
+      font-weight: 300;
    }
+   padding-bottom: 300px;
 }
 
 header {
