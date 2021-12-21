@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.bodyContainer {
+   max-width: $s-content-width;
+}
+
+section {
+   &:first-of-type {
+      margin-top: 100px;
+   }
+   margin: 0;
+   padding: 1em;
+   .sectionTitle {
+      position: sticky;
+      top: 60px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+      background-color: $c-white;
+      border-bottom: 2px solid black;
+      *{
+         margin: 0;
+      }
+   }
+   &::after {
+      content: "";
+      display: block;
+      height: 140px;
+   }
+}

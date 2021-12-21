@@ -1,20 +1,33 @@
+import { useState, useEffect } from 'react';
+import Landing from './components/Landing';
+import Header from './components/Header';
+import Body from './components/Body';
 import './scss/main.scss';
 
 function App() {
-	return (
-		<div className="App">
-			<header>
-				<div className='item'>
-					<h1>Caedan</h1>
-				</div>
-				<div className='item'>
-					=
-				</div>
-			</header>
-			<h1>Portfolio</h1>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-		</div>
-	);
+   const [atTop, setAtTop] = useState(true);
+
+   const handleScroll = () => {
+      const navPosition = document.getElementById('header').getBoundingClientRect().top;
+
+      // Sets atTop state to true when navPosition is falsey (zero).
+      setAtTop(!navPosition)
+   }
+
+   useEffect(() => {
+      window.addEventListener('scroll', handleScroll, {passive: true});
+      return () => {
+         window.removeEventListener('scroll', handleScroll)
+      }
+   }, [])
+
+   return (
+      <div className="App">
+         <div id='landing'></div>
+         <Header atTop={atTop} />
+         <Body />
+      </div>
+   );
 }
 
 export default App;
