@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 import Landing from './components/Landing';
 import Header from './components/Header';
 import Body from './components/Body';
 import './scss/main.scss';
 
 function App() {
+   smoothscroll.polyfill();
    const [navAtTop, setNavAtTop] = useState(false);
 
    const handleScroll = () => {
