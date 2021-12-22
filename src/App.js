@@ -24,11 +24,11 @@ function App() {
    }, [])
 
    return (
-      <div className="App">
+      <div className='App'>
          {/* <div id='landing'></div> */}
          <Landing />
          <Header navAtTop={navAtTop} />
-         <Body />
+         <Body navAtTop={navAtTop}/>
       </div>
    );
 }

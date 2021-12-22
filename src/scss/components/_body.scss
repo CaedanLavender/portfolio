@@ -1,29 +1,47 @@
 @use "../abstracts" as *;
 
-.bodyContainer {
-   max-width: $s-content-width;
+main {
+   width: 100%;
+}
+
+.darkBackground {
+   background-color: $c-accent-superdark;
+}
+
+.sectionSuper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;   
+   width: 100%;
 }
 
 section {
+   max-width: $s-content-width;
    &:first-of-type {
       margin-top: 100px;
    }
    margin: 0;
-   padding: 1em;
+   padding: 6em 1em;
    .sectionTitle {
       // position: sticky;
       top: 60px;
       margin-bottom: 30px;
       padding-top: 30px;
-      background-color: $c-white;
-      // border-bottom: 2px solid black;
-      // * {
-      //    margin: 0;
-      // }
    }
-   // &::after {
-   //    content: "";
-   //    display: block;
-   //    height: 140px;
-   // }
+}
+
+.orangeSchema {
+   background-color: $c-anti-accent-superdark;
+   color: $c-anti-accent-superlight;
+   h1 {
+      color: $c-anti-accent-light;
+   }
+}
+
+.greenSchema {
+   background-color: $c-accent-superdark;
+   color: $c-accent-superlight;
+   h1 {
+      color: $c-accent-light;
+   }
 }

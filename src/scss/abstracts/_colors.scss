@@ -1,8 +1,18 @@
-$accent: red;
-$accent-light: lighten($accent, 5%);
+$accent: #0059ff;
+$accent-light: lighten($accent, 10%);
 $accent-superlight: lighten($accent, 40%);
+$accent-dark: darken($accent, 10%);
+$accent-superdark: darken($accent, 40%);
+
+$anti-accent: #1dd670;
+$anti-accent-light: lighten($anti-accent, 5%);
+$anti-accent-superlight: lighten($anti-accent, 40%);
+$anti-accent-dark: darken($anti-accent, 10%);
+$anti-accent-superdark: darken($anti-accent, 45%);
 
 $dark: #0a0a0a;
+$dark-1: #1a1a1a;
+$dark-2: #2a2a2a;
 $dark-shadow: rgba($dark, 0.2);
 
 $white: white;
