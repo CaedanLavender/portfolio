@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+#landing {
+   // background-color: red;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#landingInner {
+   max-width: $s-content-width--golden;
+   width: 100%;
+   padding: 1em;
+   h1, h2, h3 {
+      // font-size: 144px;
+      margin: 0;
+      display: inline;
+   }
+   h3 {
+      font-style: italic;
+   }
+   p {
+      // font-size: 24px;
+      font-weight: 300;
+      // font-style: italic;
+   }
+   // padding-bottom: 300px;
+}

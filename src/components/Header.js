@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react';
 import '../scss/main.scss';
-const Header = ({ atTop }) => {
+const Header = ({ navAtTop }) => {
 
    return (
-      <header id='header' className={atTop && 'headerShadow'}>
+      <header id='header' className={navAtTop && 'headerShadow'}>
          <nav>
-            <ul>
+            <ul className={navAtTop && 'ul-post-landing'}>
                <li>Projects</li>
                <li>About</li>
                <li>Contact</li>

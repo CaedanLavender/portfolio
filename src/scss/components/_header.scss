@@ -1,31 +1,4 @@
-@use '../abstracts' as *;
-
-#landing {
-   // background-color: red;
-   height: 100vh;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-#landingInner {
-   max-width: $s-content-width;
-   width: 100%;
-   padding: 1em;
-   h1 {
-      // font-size: 144px;
-   }
-   h3 {
-      // font-size: 72px;
-      font-style: italic;
-   }
-   article {
-      // font-size: 24px;
-      font-weight: 300;
-   }
-   padding-bottom: 300px;
-}
+@use "../abstracts" as *;
 
 header {
    position: sticky;
@@ -36,7 +9,6 @@ header {
    background-color: $c-white;
    display: flex;
    justify-content: center;
-   // position: fixed;
    transition: box-shadow 200ms ease-in-out;
    -webkit-transition: box-shadow 200ms ease-in-out;
    -moz-transition: box-shadow 200ms ease-in-out;
@@ -50,29 +22,24 @@ header {
 
 nav {
    flex-direction: row;
-   // justify-content: space-between;
    justify-content: center;
    max-width: $s-content-width;
    width: 100%;
    display: flex;
-
    color: $c-accent;
-   h3 {
-      margin: 0;
-   }
 
    ul {
-      width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      
+      transition: all 100ms ease-in-out;
       li {
+         transition: all 100ms ease-in-out;
          padding: 1em;
          font-weight: 700;
          text-transform: uppercase;
-         font-size: 1.3em;
+         // font-size: 1.3em;
          text-decoration: none;
          list-style: none;
       }
@@ -80,5 +47,13 @@ nav {
 }
 
 @media screen and (min-width: 600px) {
-   nav ul { justify-content: flex-end }
+   .ul-post-landing {
+      // justify-content: center;
+      li {
+         padding-inline: 2em;
+         color: blue;
+      }
+   }
 }
+
+

@@ -1,1 +1,4 @@
 $content-width: 1440px;
+$content-width--two-thirds: calc($content-width / 3 * 2);
+$content-width--golden: calc($content-width / 1.618);
+$content-width--half: calc($content-width / 2);
