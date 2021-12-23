@@ -5,7 +5,7 @@ main {
 }
 
 .darkBackground {
-   background-color: $c-accent-superdark;
+   background-color: $c-primary-superdark;
 }
 
 .sectionSuper {
@@ -21,7 +21,7 @@ section {
       margin-top: 100px;
    }
    margin: 0;
-   padding: 6em 1em;
+   padding: 8em 1em 12em;
    .sectionTitle {
       // position: sticky;
       top: 60px;
@@ -30,18 +30,35 @@ section {
    }
 }
 
-.orangeSchema {
-   background-color: $c-anti-accent-superdark;
-   color: $c-anti-accent-superlight;
+
+.primarySchema {
+   background-color: $c-primary-superdark;
+   color: $c-primary-superlight;
    h1 {
-      color: $c-anti-accent-light;
+      color: $c-primary-light;
    }
 }
 
-.greenSchema {
-   background-color: $c-accent-superdark;
-   color: $c-accent-superlight;
+.primarySchema--light {
+   background-color: $c-primary-superlight;
+   color: $c-primary-superdark;
    h1 {
-      color: $c-accent-light;
+      color: $c-primary;
+   }
+}
+
+.altSchema {
+   background-color: $c-alt-primary-superdark;
+   color: $c-alt-primary-superlight;
+   h1 {
+      color: $c-alt-primary-light;
+   }
+}
+
+.altSchema--light {
+   background-color: $c-alt-primary-superlight;
+   color: $c-alt-primary-superdark;
+   h1 {
+      color: $c-alt-primary;
    }
 }

@@ -1,8 +1,12 @@
 import '../scss/main.scss';
+import { ReactComponent as Logo } from '../assets/caedan-logo.svg';
 const Landing = () => {
 
    return (
       <div id='landing'>
+            <div id="logo">
+               <Logo />
+            </div>
          <div id="landingInner">
             <p>
                Hey there, I'm <br/><h1>Caedan</h1>

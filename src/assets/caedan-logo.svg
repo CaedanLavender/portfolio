@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.41 64.87">
+   <defs>
+      <style>.cls-1{fill:#4affab;}.cls-2{fill:#22b573;}.cls-3{fill:none;}</style>
+   </defs>
+   <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_3" data-name="Layer 3">
+         <polygon class="cls-1" points="33.7 25.95 44.94 19.46 44.94 45.41 67.41 32.43 67.41 45.41 33.7 64.87 33.7 25.95"/>
+         <polygon class="cls-2" points="56.17 25.95 67.41 32.43 44.94 45.41 44.94 32.43 56.17 25.95"/>
+         <polygon class="cls-2" points="0 6.49 33.7 25.95 33.7 64.87 0 45.41 0 32.43 22.47 45.41 22.47 32.43 0 19.46 0 6.49"/>
+         <polygon class="cls-1" points="0 32.43 11.23 25.95 22.47 32.43 22.47 45.41 0 32.43"/>
+         <polygon class="cls-1" points="0 6.49 11.23 0 44.94 19.46 33.7 25.95 0 6.49"/>
+         <polygon class="cls-3" points="0 6.49 11.23 0 44.94 19.46 44.94 32.43 56.17 25.95 67.41 32.43 67.41 45.41 33.7 64.87 0 45.41 0 32.43 11.23 25.95 0 19.46 0 6.49"/>
+         <polyline class="cls-3" points="0 6.49 33.7 25.95 44.94 19.46"/>
+         <polyline class="cls-3" points="11.23 25.95 22.47 32.43 22.47 45.41 0 32.43"/>
+         <line class="cls-3" x1="33.7" y1="25.95" x2="33.7" y2="64.87"/>
+         <polyline class="cls-3" points="44.94 32.43 44.94 45.41 67.41 32.43"/>
+      </g>
+   </g>
+</svg>

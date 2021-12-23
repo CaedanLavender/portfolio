@@ -5,7 +5,8 @@
    height: 100vh;
    width: 100%;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   // justify-content: center;
    align-items: center;
 }
 
@@ -21,7 +22,7 @@
    }
    h1 {
       font-weight: 900;
-      // color: $c-accent;
+      // color: $c-primary;
    }
    h3 {
       font-weight: 800;
@@ -34,4 +35,9 @@
       // font-style: italic;
    }
    // padding-bottom: 300px;
+}
+
+#logo {
+   width: 12ch;
+   margin-block: 2em;
 }

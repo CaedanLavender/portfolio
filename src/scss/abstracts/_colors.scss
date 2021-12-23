@@ -1,14 +1,14 @@
-$accent: #0059ff;
-$accent-light: lighten($accent, 10%);
-$accent-superlight: lighten($accent, 40%);
-$accent-dark: darken($accent, 10%);
-$accent-superdark: darken($accent, 40%);
+$primary: #ff0037;
+$primary-light: lighten($primary, 10%);
+$primary-superlight: lighten($primary, 50%);
+$primary-dark: darken($primary, 10%);
+$primary-superdark: darken($primary, 40%);
 
-$anti-accent: #1dd670;
-$anti-accent-light: lighten($anti-accent, 5%);
-$anti-accent-superlight: lighten($anti-accent, 40%);
-$anti-accent-dark: darken($anti-accent, 10%);
-$anti-accent-superdark: darken($anti-accent, 45%);
+$alt-primary: #0d34e0;
+$alt-primary-light: lighten($alt-primary, 5%);
+$alt-primary-superlight: lighten($alt-primary, 50%);
+$alt-primary-dark: darken($alt-primary, 10%);
+$alt-primary-superdark: darken($alt-primary, 40%);
 
 $dark: #0a0a0a;
 $dark-1: #1a1a1a;
