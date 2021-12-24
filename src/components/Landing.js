@@ -13,7 +13,7 @@ const Landing = () => {
             </p>
             <p>
                A <h3>Web Developer</h3>&nbsp;
-               in New Zealand with experience in Node and React (MERN). Currently upskilling in Docker, Nginx, and automation testing with Cypress.
+               in New&nbsp;Zealand with experience in Node and React (MERN). Currently upskilling in Docker, Nginx, and automation testing with Cypress.
             </p>
             <p>
                I’m always interested in learning new things. Outside of tech, I’m fascinated by science, psychology, and storytelling.

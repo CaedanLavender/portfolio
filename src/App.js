@@ -17,17 +17,35 @@ function App() {
    }
 
    useEffect(() => {
-      window.addEventListener('scroll', handleScroll, {passive: true});
+      window.addEventListener('scroll', handleScroll, { passive: true });
       return () => {
          window.removeEventListener('scroll', handleScroll)
       }
    }, [])
 
+   // let options = {
+   //    // threshold: 0.8,
+   //    rootMargin: '-250px'
+   // }
+
+   // const observerCandidates = document.querySelectorAll('section');
+
+   // const observer = new IntersectionObserver(entries => {
+   //    entries.forEach(entry => {
+   //       entry.target.classList.toggle("show", entry.isIntersecting)
+   //       // if (entry.isIntersecting) observer.unobserve(entry.target)
+   //    })
+   // }, options)
+
+   // observerCandidates.forEach(each => {
+   //    observer.observe(each)
+   // })
+
    return (
       <div className='App'>
          <Landing />
          <Header navAtTop={navAtTop} />
-         <Body navAtTop={navAtTop}/>
+         <Body navAtTop={navAtTop} />
       </div>
    );
 }

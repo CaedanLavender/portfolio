@@ -1,6 +1,25 @@
-@use 'abstracts' as *;
-@use 'components' as *;
+@use "abstracts" as *;
+@use "components" as *;
 
 :root {
    background-color: $c-white;
 }
+
+// // h3, h1 {
+// //    // opacity: 0;
+// //    // transform: rotate3d(1, 0, 0, -45deg);
+// //    transform: translateY(100px);
+// //    transform-origin: bottom center;
+// //    perspective: 100px;
+// //    // transform: scale(0.9);
+// // }
+
+// section {
+//    opacity: 0;
+//    transition: all 200ms ease-in-out;
+// }
+
+// .show {
+//    transform: none;
+//    opacity: 1;
+// }

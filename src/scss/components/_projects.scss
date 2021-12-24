@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.cardList {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+article.card {
+   border: 2px solid $c-light-1;
+   background-color: $c-white;
+   padding: 1em;
+   border-radius: 0.5em;
+   display: flex;
+   color: $c-dark-1;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1em;
+   @media screen and (max-width: 850px) {
+      flex-direction: column;
+   }
+   h3 {
+      // color: $c-primary-dark;
+      margin: 0;
+   }
+   p {
+      // color: $c-primary-superdark;
+   }
+
+   .card-part {
+      flex: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+   }
+}
+
+.typeContainer {
+}
+
+.stackContainer {
+   li {
+      list-style: none;
+   }
+}
