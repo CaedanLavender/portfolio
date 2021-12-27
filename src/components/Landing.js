@@ -19,7 +19,7 @@ const Landing = () => {
                I’m always interested in learning new things. Outside of tech, I’m fascinated by science, psychology, and storytelling.
             </p>
             <p>
-               Interested in working with me? Drop me a line below.
+               Interested in working with me?<br/>Drop me a line below.
             </p>
          </div>
       </div>

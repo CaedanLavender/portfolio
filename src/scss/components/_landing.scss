@@ -22,6 +22,10 @@
    }
    h1 {
       font-weight: 900;
+      transition: all 100ms ease-in-out;
+      &:hover{
+         font-kerning: 2em;
+      }
       // color: $c-primary;
    }
    h3 {

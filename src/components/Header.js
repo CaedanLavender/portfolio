@@ -9,8 +9,8 @@ const Header = ({ navAtTop }) => {
       <header id='header' className={navAtTop && 'headerShadow'}>
          <nav>
             <ul className={navAtTop && 'ul-post-landing'}>
-               <li onClick={() => scrollToSection('projects')}>Projects</li>
                <li onClick={() => scrollToSection('about')}>About</li>
+               <li onClick={() => scrollToSection('projects')}>Projects</li>
                <li onClick={() => scrollToSection('contact')}>Contact</li>
             </ul>
          </nav>
