@@ -4,22 +4,23 @@ const Landing = () => {
 
    return (
       <div id='landing'>
+         <div id="landingInner">
             <div id="logo">
                <Logo />
             </div>
-         <div id="landingInner">
+            <div className='mainHeading'>
+               Hey there, I'm
+               <h1>Caedan</h1>
+            </div>
             <p>
-               Hey there, I'm <br/><h1>Caedan</h1>
-            </p>
-            <p>
-               A <h3>Web Developer</h3>&nbsp;
-               in New&nbsp;Zealand with experience in Node and React (MERN). Currently upskilling in Docker, Nginx, and automation testing with Cypress.
+               A <span className='emp'>Web Developer</span> in <span className="emp">New&nbsp;Zealand</span> with experience in Node and React (MERN). Currently upskilling in Docker, Nginx, and Cypress.
             </p>
             <p>
                I’m always interested in learning new things. Outside of tech, I’m fascinated by science, psychology, and storytelling.
             </p>
             <p>
                Interested in working with me?<br/>Drop me a line below.
+               New Zealand
             </p>
          </div>
       </div>

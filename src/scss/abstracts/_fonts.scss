@@ -1,19 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
 @import url("https://use.typekit.net/ruz5aai.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+// $heading: "neue-haas-grotesk-display", serif;
+// $heading: "soleil", serif;
 
-// $heading: "Merriweather", serif;
-$heading: "neue-haas-grotesk-display", serif;
-// $body: "Source Sans Pro", sans-serif;
-$body: "neue-haas-unica", serif;
+// $heading: "neue-haas-unica", serif;
+$heading: "brandon-grotesque", serif;
+$body: "ff-tisa-sans-web-pro", serif;
 
 * {
    font-family: $body;
@@ -69,7 +61,7 @@ $body: "neue-haas-unica", serif;
 
 p {
    margin-bottom: 1rem;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 h1,
@@ -79,7 +71,7 @@ h4,
 h5 {
    margin: 3rem 0 1.38rem;
    font-family: $heading, serif;
-   font-weight: 700;
+   font-weight: 800;
    line-height: 1.3;
 }
 

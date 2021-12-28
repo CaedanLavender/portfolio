@@ -10,8 +10,8 @@ const Projects = () => {
          type: 'class assignment',
          description: [
             'A class assignment. This app presents the user with a contact form that, when submitted, adds the data to a MongoDB Atlas database.',
-            "Clicking the 'Login' button will take you to a mock 'admin panel' where you can review all entries that are 'unresolved'.",
-            "The app is dockerised and deploys using Github Actions and Render"
+            "Clicking the 'Sign in' button will take you to a mock 'admin panel' where you can review all entries that are 'unresolved'.",
+            "The app is dockerised and deploys using Github Actions and Render."
          ],
          stack: [
             'NodeJS',
@@ -37,31 +37,32 @@ const Projects = () => {
          {
             projectList.map((project) => (
                <article className='card'>
-
                   <div className='card-part'>
-                     <div className='listContainer project__stack text_small'>
-                        <ul>
-                           {
-                              project.stack.map((item, i) => (
-                                 <>
-                                    {!!i && <li>+</li>}
-                                    <li>{item}</li>
-                                 </>
-                              ))
-                           }
-                        </ul>
-                     </div>
+                  {/* <div className="cardHR"></div> */}
                      <h3>{project.name}</h3>
-                     <div className='project__type'>
-                        <small>{toSentenceCase(project.type)}</small>
-                     </div>
-                     <div className="listContainer project__links">
+                     <div className="listContainer project__links text_small">
                         <ul>
                            {
                               project.links?.map((each) => <li><a href={each.link} rel='noreferrer' target='_blank'>{each.name}</a></li>)
                            }
                         </ul>
                      </div>
+                     <div className='project__type'>
+                        <small>{toSentenceCase(project.type)}</small>
+                     </div>
+                     <div className='listContainer project__stack text_small'>
+                        <ul>
+                           {
+                              project.stack.map((item, i) => (
+                                 <>
+                                    {!!i && <li>/</li>}
+                                    <li>{item}</li>
+                                 </>
+                              ))
+                           }
+                        </ul>
+                     </div>
+                     <div className="cardHR"></div>
                      <div className='project__description'>
                         {
                            project.description.map((paragraph) => <p>{paragraph}</p>)

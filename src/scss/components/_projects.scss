@@ -10,11 +10,11 @@
    ::selection {
       background-color: rgba($c-alt, 0.4);
    }
-   border-inline-start: 2px dashed $c-light-1;
+   border-block: 1px dashed $c-light-1;
    background-color: $c-white;
-   padding-inline: 1em;
+   padding-block: 1em;
    display: flex;
-   color: $c-dark-1;
+   color: $c-dark-2;
    flex-direction: row;
    justify-content: space-between;
    gap: 2em;
@@ -26,47 +26,46 @@
       margin: 0;
    }
    p {
-      // color: $c-primary-superdark;
+      color: $c-dark-7;
+      font-weight: 400;
    }
 
    .card-part {
       flex: 50%;
       display: flex;
       flex-direction: column;
-      gap: 0.5em;
+      gap: 1em;
       img {
          width: 100%;
+         padding: 1em;
          height: 100%;
          object-fit: contain;
+         object-position: top;
+         border: 1px dashed $c-light-1;
          filter: grayscale(1);
          user-select: none;
-         // transition: filter 200ms ease-in-out;
-         &:hover{
+         &:hover {
             filter: none;
          }
-         // border-inline-start: 2px solid $c-light-1;
       }
    }
 }
 
 .project__type {
    * {
-      background-color: black;
-      color: white;
-      padding-inline: 1ch;
+      text-transform: uppercase;
+      font-weight: 700;
    }
 }
 
 .project__stack {
-   color: $c-dark-5;
-   // text-align: justify;
+   color: $c-dark-4;
 }
 
 .listContainer {
-   ul{
+   ul {
       display: flex;
-      gap: 1em;
-      // justify-content: space-between;
+      gap: 1ch;
       flex-wrap: wrap;
       width: 100%;
    }
@@ -74,28 +73,26 @@
       list-style: none;
    }
    a {
-      font-weight: 600;
+      padding-inline: 1ch;
+      text-decoration: none;
+      font-weight: 500;
       color: $c-dark-2;
-      transition: color 100ms ease-in-out;
+      transition: color 100ms ease-in-out, background-color 100ms ease-in-out, border-color 100ms ease-in-out;
+      border: 1px solid $c-dark-2;
       &:hover {
-         color: $c-alt;
+         border-color: $c-alt;
+         background-color: $c-alt;
+         color: $c-white;
       }
    }
 }
 
-
-
 .project__links {
-
 }
 
-.textJustify {
-   // content: "";
-   // width: 50%;
-   // text-align: justify;
-   // background-color: red;
-   // height: 10px;
-   // color: red;
-   // overflow: hidden;
-   // display: block;
+.cardHR {
+   height: 1ch;
+   margin-block: 0.5ch;
+   width: 100%;
+   background-color: $c-dark-2;
 }
